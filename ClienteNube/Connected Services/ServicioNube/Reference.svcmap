@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="63029622-894c-4b2a-a804-773a5155ba52" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:60127/ServicioNube.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioNube.xsd" MetadataType="Schema" ID="ab8b29f1-2990-4dd9-9b04-b4295915a3a1" SourceId="1" SourceUrl="http://localhost:60127/ServicioNube.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioNube.wsdl" MetadataType="Wsdl" ID="c3b4ee66-7d73-4f65-a7ab-c02421e83251" SourceId="1" SourceUrl="http://localhost:60127/ServicioNube.svc?wsdl" />
+    <MetadataFile FileName="ServicioNube1.xsd" MetadataType="Schema" ID="4240d81f-a3b7-4383-b0b8-d1f535eb4aee" SourceId="1" SourceUrl="http://localhost:60127/ServicioNube.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioNube2.xsd" MetadataType="Schema" ID="f40675fa-236f-42c9-9262-c6512b343168" SourceId="1" SourceUrl="http://localhost:60127/ServicioNube.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioNube.disco" MetadataType="Disco" ID="f2f90e7c-a7d8-41eb-ab3e-8752e5e1cc49" SourceId="1" SourceUrl="http://localhost:60127/ServicioNube.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

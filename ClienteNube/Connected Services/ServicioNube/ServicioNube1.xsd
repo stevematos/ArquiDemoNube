@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:60127/ServicioNube.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServicioNube" />
+  <xs:element name="ObtenerEjemplares">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEjemplaresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServicioNube" minOccurs="0" name="ObtenerEjemplaresResult" nillable="true" type="q1:ArrayOfEjemplar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="devolverMensaje">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="devolverMensajeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="devolverMensajeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IngresarLibro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EjemplarId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EditoraId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="titulo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaPublicacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Costo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PrecioVenta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IngresarLibroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IngresarLibroResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarEjemplar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EjemplarId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarEjemplarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServicioNube" minOccurs="0" name="BuscarEjemplarResult" nillable="true" type="q2:Ejemplar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BorrarEjemplar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Ejemplar" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BorrarEjemplarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BorrarEjemplarResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarEjemplar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Ejemplarid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="editoraid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="titulo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechapublicacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Costo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PrecioVenta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarEjemplarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModificarEjemplarResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarEditorial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editoraid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarEditorialResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServicioNube" minOccurs="0" name="BuscarEditorialResult" nillable="true" type="q3:Editora" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEditoras">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEditorasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ServicioNube" minOccurs="0" name="ObtenerEditorasResult" nillable="true" type="q4:ArrayOfEditora" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

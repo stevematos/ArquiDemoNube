@@ -1,0 +1,1 @@
+﻿INSERT INTO ejemplar VALUES ( '6','2','hola','19-08-1997',45,65);

@@ -1,0 +1,1 @@
+﻿Delete from Ejemplar where EjemplarId=7;

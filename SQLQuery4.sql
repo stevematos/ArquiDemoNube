@@ -1,0 +1,1 @@
+﻿SELECT * FROM ejemplar where ejemplarid=1;
